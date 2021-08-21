@@ -4,7 +4,7 @@ provider "aws" {
 }
 variable "ingressrules" {
   type    = list(number)
-  default = [22, 8080]
+  default = [22, 8080, 80]
 }
 resource "aws_vpc" "Vpc" {
   cidr_block       = "172.20.0.0/16"
